@@ -1,0 +1,1 @@
+INSERT INTO `practice`. `users` (username, password, role)VALUES ( 'user','pass', 'ROLE_USER');
