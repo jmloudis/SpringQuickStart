@@ -2,7 +2,8 @@
 1. Clone repo or download Zip Folder
 2. Edit application.properties file under `src/main/resources/` 
 3. Change to your credentials `spring.datasource.username` & `spring.datasource.password`
-4. Build and Run!
+4. Build and Run! 
+5. Enter `localhost:8080` in web browser
 
 - A new schema called `practice` will be created and populated with a new user.
 - Default Login Credentials: `user` : `pass`
