@@ -10,9 +10,11 @@
 
 # SpringQuickStart
 - Pre populated SQL database with JPA and Hibernate
-- Spring security with functional login and register
-- Bcrypt hashing for passwords
+- Spring security with functional login and registration
+- USER and ADMIN roles 
+- Bcrypt implementation
 - MVC Framework
+- Source Code with comments and explanation
 
 
 
