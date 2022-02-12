@@ -1,7 +1,7 @@
 # How to setup
 1. Clone repo or download Zip Folder
 2. Edit application.properties file under `src/main/resources/` 
-3. Enter Database Credentials
+3. Change credentials to your local settings `spring.datasource.username` & `spring.datasource.password`
 4. Build and Run!
 
 - A new schema called `practice` will be created and populated with a new user.
