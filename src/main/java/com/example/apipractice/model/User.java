@@ -9,6 +9,7 @@ import javax.persistence.*;
 import javax.persistence.Table;
 import java.io.Serializable;
 
+
 @Slf4j
 @Entity
 @Table(name = "users")
@@ -23,30 +24,6 @@ public class User implements Serializable {
     @Column(name = "user_id")
     private Long uid;
 
-//    @Column(name = "first", nullable = false, length = 45)
-//    private String firstName;
-//
-//    @Column(name = "last", nullable = false, length = 45)
-//    private String lastName;
-
-//    @Column(name = "email", unique = true, length = 45)
-//    private String emailAddress;
-
-//    @Column(name = "phone_num", length = 10)
-//    private String phoneNumber;
-//
-//    @Column(name = "dob", length = 10)
-//    private String dateOfBirth;
-//
-//    @Column(name = "address", length = 75)
-//    private String address;
-//
-//    @Column(name = "state", length = 25)
-//    private String state;
-//
-//    @Column(name = "zip_code", length = 5)
-//    private String zipCode;
-
     @Column(name = "username", unique = true, nullable = false, length = 45)
     private String username;
 
@@ -59,13 +36,50 @@ public class User implements Serializable {
     @Column(name = "enabled")
     private boolean enabled = true;
 
+    public Long getUid() {
+        return uid;
+    }
+
+    public void setUid(Long uid) {
+        this.uid = uid;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "userID=" + uid +
-//                ", firstName='" + firstName + '\'' +
-//                ", lastName='" + lastName + '\'' +
-//                ", emailAddress='" + emailAddress + '\'' +
                 ", username= '" + username + '\'' +
                 ", role= '" + role + '\'' +
                 '}';
