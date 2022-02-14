@@ -1,0 +1,46 @@
+.navbar-dark {
+
+    color: hsla(129, 53%, 90%, 1);
+}
+
+body {
+    background-color: hsla(141, 45%, 81%, 0.5);;
+}
+.formButton {
+    background-color: hsla(159, 56%, 7%, 1);;
+    border-color: #FEFFFF;
+    border-width: 2px;
+    border-radius: 2px;
+
+}
+.loginTitle {
+    margin-bottom: 3%;
+    font-family: "Roboto", "Verdana", "SansSerif";
+    color: hsla(159, 56%, 7%, 1);
+    background-color: hsla(141, 45%, 81%, 1);
+    border-radius: 5px;
+}
+
+.page-title {
+    margin-bottom: 3%;
+    font-family: "Roboto", "Verdana", "SansSerif";
+    color: hsla(159, 56%, 7%, 1);;
+
+}
+
+.container-margin {
+    margin-top: 15%;
+}
+
+
+
+/*!* CSS HSL *!*/
+/*--nyanza: hsla(129, 53%, 90%, 1);*/
+/*--turquoise-green: hsla(141, 45%, 81%, 1);*/
+/*--turquoise-green-2: hsla(147, 43%, 71%, 1);*/
+/*--ocean-green: hsla(150, 42%, 62%, 1);*/
+/*--ocean-green-2: hsla(152, 41%, 52%, 1);*/
+/*--illuminating-emerald: hsla(153, 39%, 41%, 1);*/
+/*--bottle-green: hsla(153, 40%, 30%, 1);*/
+/*--brunswick-green: hsla(155, 43%, 18%, 1);*/
+/*--dark-jungle-green: hsla(159, 56%, 7%, 1);*/

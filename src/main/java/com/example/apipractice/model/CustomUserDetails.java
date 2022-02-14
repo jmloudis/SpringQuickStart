@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 // Lombok is a library that helps clean up boiler code
 @Getter
 @Setter
-
 public class CustomUserDetails implements UserDetails {
 
     private static final long serialVersionUID = 1L;
@@ -41,6 +40,24 @@ public class CustomUserDetails implements UserDetails {
     }
 
     @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
     public boolean isAccountNonExpired() {
         return true;
     }
@@ -58,5 +75,9 @@ public class CustomUserDetails implements UserDetails {
     @Override
     public boolean isEnabled() {
         return isActive;
+    }
+
+    public String getFullName() {
+        return username;
     }
 }

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class LoginController {
 
+
     @RequestMapping("/default")
     public String defaultAfterLogin(HttpServletRequest request) {
 
