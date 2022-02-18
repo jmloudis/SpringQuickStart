@@ -13,7 +13,7 @@ public class LoginController {
     public String defaultAfterLogin(HttpServletRequest request) {
 
         if (request.isUserInRole("ROLE_ADMIN")) {
-            return "index";
+            return "admin/admin-index";
         }
         return "index";
 
