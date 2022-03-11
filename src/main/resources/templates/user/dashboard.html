@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/header :: head}"></head>
+
+<body>
+
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- TOPBAR CONTENT  -->
+        <div th:replace="fragments/navbar :: user-navbar"></div>
+    </nav>
+
+    <div class="page-container">
+        <nav class="sidenav">
+            <nav th:replace="~{fragments/NavSideTop :: collapseNav}"></nav>
+        </nav>
+        <div id="main" class="py-5 text-center">
+            <h1>Hello World</h1>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

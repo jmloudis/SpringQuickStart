@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head th:replace="~{fragments/header :: head}"></head>
+<body>
+
+
+<div id="main-wrapper">
+
+  <!-- Topbar header - style you can find in pages.scss -->
+  <div th:replace="fragments/navbar :: user-navbar"></div>
+  <!-- Left Sidebar - style you can find in sidebar.scss  -->
+  <div th:replace="fragments/sidebar :: sidebar"></div>
+  <!-- Page wrapper  -->
+  <div class="page-wrapper" id="mainContent">
+    <div layout:fragment="content"></div>
+<!--    <div th:replace="fragments/footer :: footer"></div>-->
+  </div>
+</div>
+
+</body>
+</html>
