@@ -28,6 +28,12 @@ public class UserController {
 
     }
 
+    @GetMapping("/dashboard")
+    public String dashboard() {
+
+        return "user/dashboard";
+    }
+
     // Adds new User to the Model class
     @GetMapping("/userRegister")
     public String userRegister(Model model){
