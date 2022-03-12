@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/header :: head}"></head>
+<!--<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">-->
+
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+
+<head>
+
+</head>
 
 <body>
 
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- TOPBAR CONTENT  -->
-        <div th:replace="fragments/navbar :: user-navbar"></div>
-    </nav>
+<div layout:fragment="content">
 
-    <div class="page-container">
-        <nav class="sidenav">
-            <nav th:replace="~{fragments/NavSideTop :: collapseNav}"></nav>
-        </nav>
-        <div id="main" class="py-5 text-center">
-            <h1>Hello World</h1>
-        </div>
-    </div>
+
+    <h1>Title</h1>
+
+    <h2>Section</h2>
+
+    <p>Lorem ipsum dolor sit amet, eu in mollis morbi nunc nulla
+        metus, ipsum etiam dictum natoque nec eleifend. Congue nec porttitor,
+        ullamcorper neque eu posuere tristique arcu, feugiat magna quam
+        tristique nonummy diam torquent, venenatis ut, fugit suspendisse quis
+        nec.</p>
+
+    <h3>Sub-Section</h3>
+
+    <p>Lorem ipsum dolor sit amet, eu in mollis morbi nunc nulla
+        metus, ipsum etiam dictum natoque nec eleifend. Congue nec porttitor,
+        ullamcorper neque eu posuere tristique arcu, feugiat magna quam
+        tristique nonummy diam torquent, venenatis ut, fugit suspendisse quis
+        nec.</p>
+
 </div>
 
 </body>
