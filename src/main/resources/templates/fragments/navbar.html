@@ -4,7 +4,7 @@
 <!--            PERMIT ALL NAVBAR       -->
 <header>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="background-color: hsla(150, 42%, 62%, 1);"
-     th:fragment="navbar">
+     th:fragment="navbar" id="navbarMain">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" th:href="@{/}">
@@ -47,7 +47,7 @@
 </nav>
 
 <!--            USER NAVBAR         -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark" th:fragment="user-navbar">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" th:fragment="user-navbar" id="navbarUser">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" th:href="@{/}">

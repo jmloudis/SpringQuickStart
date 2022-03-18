@@ -43,3 +43,15 @@ body {
 .container-margin {
     margin-top: 15%;
 }
+
+#sidebarMain {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    z-index: 600;
+    transition: all 0.3s;
+}
