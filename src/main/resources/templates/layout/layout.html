@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
-<head th:replace="~{fragments/header :: head}"></head>
+
+<head>
+        <style th:replace="~{fragments/header :: head}"></style>
+
+</head>
 <body>
 
+<div th:replace="~{fragments/navbar :: user-navbar}"></div>
 
-<div id="main-wrapper">
+<div class="container" id="mainContents">
 
-  <!-- Topbar header - style you can find in pages.scss -->
-  <div th:replace="fragments/navbar :: user-navbar"></div>
-  <!-- Left Sidebar - style you can find in sidebar.scss  -->
-  <div th:replace="fragments/sidebar :: sidebar"></div>
-  <!-- Page wrapper  -->
-  <div class="page-wrapper" id="mainContent">
-    <div layout:fragment="content"></div>
-<!--    <div th:replace="fragments/footer :: footer"></div>-->
+  <div class="row">
+    <div class="col-md-2">
+      <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+    </div>
+
+    <div class="col-md-8">
+      <div layout:fragment="content"></div>
+    </div>
+
+
   </div>
 </div>
+
+<!--<div th:replace="fragments/footer :: footer"></div>-->
+
+
+<!--<div id="main-wrapper">-->
+
+<!--  &lt;!&ndash; Topbar header - style you can find in pages.scss &ndash;&gt;-->
+<!--  -->
+<!--  -->
+<!--  <div th:replace="fragments/navbar :: user-navbar"></div>-->
+<!--  -->
+<!--  &lt;!&ndash; Left Sidebar - style you can find in sidebar.scss  &ndash;&gt;-->
+<!--  -->
+<!--  <div th:replace="fragments/sidebar :: sidebar"></div>-->
+<!--  -->
+<!--  &lt;!&ndash; Page wrapper  &ndash;&gt;-->
+<!--  -->
+<!--  <div class="page-wrapper" id="mainContent">-->
+<!--  -->
+<!--    <div layout:fragment="content"></div>-->
+<!--&lt;!&ndash;    <div th:replace="fragments/footer :: footer"></div>&ndash;&gt;-->
+<!--  </div>-->
+<!--</div>-->
 
 </body>
 </html>
