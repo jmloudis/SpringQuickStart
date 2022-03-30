@@ -55,3 +55,14 @@ body {
     z-index: 600;
     transition: all 0.3s;
 }
+
+#homePage {
+    padding: 120px;
+
+}
+
+.col-sm-6{
+    border-radius: 10px;
+    margin:0 10px 0 10px;
+
+}
